@@ -1,0 +1,112 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(240, 216, 2, 0.692);
+}
+img{
+    height: 100px;
+    width: 200px;
+    float: left;
+}
+h1{
+    margin: 0px;
+}
+button{
+    height: 30px;
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10%;
+    font-family: sans-serif;
+}
+.button{
+    margin-top: 50px;
+    margin-right: 12px;
+    height: 50px;
+    float: right;
+    display: flex;
+    align-items: flex-end;
+    
+}
+.bgimg{
+    background-image: url(https://c1.wallpaperflare.com/preview/915/392/906/backround-color-grain-background.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    height: 800px;
+    margin-top: 0%;
+}
+.box{
+    margin-top: 3px;
+    height: 50px;
+ text-align: center;
+ font-size: 26px;
+ animation-name: ayush;
+ animation-duration: 6s;
+ animation-iteration-count: infinite;
+    width: 150px;
+}
+.box:nth-child(1){
+    animation-timing-function: linear;
+
+}
+.box:nth-child(2){
+    animation-timing-function: ease;
+
+}
+.box:nth-child(3){
+    animation-timing-function: ease-in;
+}
+.box:nth-child(4){
+    animation-timing-function: ease-out;
+}
+.box:nth-child(5){
+    animation-timing-function: ease-in-out;
+}
+.box:nth-child(odd){
+    background-color: red;
+}
+.box:nth-child(even){
+    background-color: rgb(39, 197, 39);
+}
+@keyframes ayush{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(500px);
+    }
+}
+@media only screen and (min-width:340px) and (max-width:580px){
+    nav{
+        height: 100px;
+    }
+    img{
+        width: 90px;
+    }
+    .button{
+        height: 50px;
+        width: 260px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 110px;
+    }
+    button{
+        height: 20px;
+    }
+    @keyframes ayush{
+        0%{
+            transform: translateX(0px);
+
+        }
+        100%{
+            transform: translateX(150px);
+        }
+    }
+}
+
